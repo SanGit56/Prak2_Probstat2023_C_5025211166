@@ -6,12 +6,13 @@ kolom_y <- c(100, 95, 70, 90, 90, 90, 89, 100, 100)
 
 selisih = kolom_y - kolom_x
 standar_deviasi = sd(selisih)
-print(standar_deviasi)
+standar_deviasi
+# standar deviasi = 7.838651
 
 # b. Carilah nilai t (p-value)
 
 nilai_t = 2 * pt(-abs(( (mean(selisih) - 0) / (standar_deviasi / sqrt(9)))), df=8)
-print(nilai_t)
+nilai_t
 # p-value = 0.0001372773
 
 # c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam
